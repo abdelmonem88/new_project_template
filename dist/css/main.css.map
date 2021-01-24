@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,QACA,SAAU,CACV,cAAe,CACf,yBAA0B","file":"main.css","sourcesContent":[".parent {\r\ncolor: red;\r\nfont-size: 44px;\r\nbackground-color: darkcyan;\r\n}"]}
