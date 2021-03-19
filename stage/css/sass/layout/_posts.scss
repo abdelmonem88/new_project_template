@@ -1,0 +1,50 @@
+.posts {
+ background: url("../images/Wave.png");
+ background-position: bottom;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+ .post {
+  background-color: $lightColor;
+  padding: 2rem 1.25rem;
+  box-shadow: $boxShadow;
+  border-radius: 5px;
+
+  .post-top {
+   font-style: italic;
+   h5 {
+    font-size: 14px;
+   }
+  }
+
+  .post-title {
+   font-size: 15px;
+   font-weight: 600;
+   color: $darkColor;
+   line-height: 1.8;
+   transition: $transition;
+   margin: 1rem 0;
+  }
+
+  .post-body {
+   margin: 0;
+   font-size: 14px;
+  }
+
+  &:hover .post-title {
+   color: $mainColor;
+  }
+ }
+
+ .posts-btn {
+  display: block;
+  background-color: $mainColor;
+  color: $lightColor;
+  margin: 3rem auto 0;
+  padding: 0.5rem 3rem;
+  font-size: 15px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  outline: none;
+ }
+}

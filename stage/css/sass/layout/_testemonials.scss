@@ -1,0 +1,89 @@
+.testemonials {
+ background-image: url("../images/Wave Shape.png");
+ background-position: center;
+ background-size: cover;
+
+ .testemoinals-items {
+  position: relative;
+
+  .testemonial-item.active {
+   display: block;
+  }
+
+  .testemonial-item {
+   padding-left: 4.5rem;
+   position: relative;
+   transition: $transition;
+   display: none;
+   animation: nextScale 0.75s ease-in-out;
+
+   @keyframes nextScale {
+    0% {
+     transform: scale(0);
+    }
+    30% {
+     transform: scale(0.75);
+    }
+    75% {
+     transform: scale(0.25);
+    }
+    100% {
+     transform: scale(1);
+    }
+   }
+
+   .icon {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 2rem;
+    color: $mainColor;
+   }
+
+   .desc {
+    padding-right: 10rem;
+    margin-bottom: 3rem;
+   }
+
+   .person-name {
+    font-size: 18px;
+    color: $mainColor;
+   }
+
+   .person-title {
+    font-size: 12px;
+    color: $textColor;
+   }
+  }
+ }
+
+ .slider-btns {
+  position: absolute;
+  right: 170px;
+  bottom: 10px;
+  z-index: 99;
+
+  button {
+   background-color: transparent;
+   color: #d9e2ec;
+   outline: none;
+  }
+
+  button.active-btn {
+   color: $mainColor;
+  }
+ }
+}
+@media (max-width: 767px) {
+ .testemonials {
+  .testemonial-item {
+   .desc {
+    padding: 0 !important;
+   }
+  }
+
+  .slider-btns {
+   right: 20px !important;
+  }
+ }
+}

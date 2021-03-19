@@ -1,0 +1,13 @@
+@mixin btn($color) {
+ border: 2px solid $color;
+ padding: 0.25rem 2rem;
+ border-radius: 30px;
+ transition: $transition;
+}
+
+@mixin flex {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+}

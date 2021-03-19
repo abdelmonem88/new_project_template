@@ -1,0 +1,72 @@
+.newsletter {
+ text-align: center;
+ background: url(../images/Smartphone.png);
+ background-color: $mainColor;
+ background-position: center;
+ background-size: cover;
+
+ .newsletter-content {
+  .newsletter-heading,
+  .newsletter-desc {
+   color: $lightColor;
+  }
+
+  .newsletter-desc {
+   font-size: 12px;
+  }
+
+  .input-control {
+   width: 370px;
+   margin: 1.5rem auto;
+   position: relative;
+
+   input[type="text"],
+   input[type="submit"] {
+    border: none;
+    outline: none;
+   }
+
+   input[type="text"] {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.35rem 7rem 0.35rem 2.5rem;
+   }
+
+   input[type="text"]::placeholder {
+    font-size: 12px;
+    color: $mainColor;
+   }
+
+   input[type="submit"] {
+    background-color: $mainColor;
+    color: $lightColor;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    top: 2px;
+    right: 2.5px;
+    font-size: 10px;
+    text-transform: uppercase;
+   }
+
+   .input-icon {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    color: $mainColor;
+   }
+  }
+
+  .systems-icons {
+   padding: 0;
+
+   li i {
+    color: $lightColor;
+   }
+
+   li:nth-child(2) {
+    margin: 0 0.75rem;
+   }
+  }
+ }
+}

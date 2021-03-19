@@ -1,9 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<link rel="stylesheet" href="css/main.css"/>
-<div class="parent">
-  <div class="child">
-    <div class="element class-one">  hello from Pug file</div>
-  </div>
-</div>
-<script src="js/main.js"></script>
-<script src="http://localhost:35729/livereload.js"></script>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Vendors -->
+      <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./vendors/fontawesome 5/css/all.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <!-- Styles -->
+      <link rel="stylesheet" href="./css/main.css">
+      <title>Smart Watch App</title>
+   </head>
+
+   <body>
+      <!-- Home Section Start -->
+      <section id="home" class="home">
+         <header>
+            <nav>
+               <div class="container">
+                  <div class="row">
+                     <div class="nav-wrapper d-flex justify-content-between w-100 align-items-center pt-3">
+                        <div class="nav-left">
+                           <ul class="list d-flex">
+                              <li class="list-item mr-5">
+                                 <a href="#" class="list-link">
+                                    How it works
+                                 </a>
+                              </li>
+                              <li class="list-item mr-5">
+                                 <a href="#" class="list-link">
+                                    FAQ
+                                 </a>
+                              </li>
+                              <li class="list-item mr-5">
+                                 <a href="#" class="list-link">
+                                    Princing
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="nav-center d-flex justify-content-between">
+                           <div class="nav-logo">
+                              <a href="#">A</a>
+                           </div>
+
+                           <div class="toggle-icon">
+                              <span></span><span></span><span></span>
+                           </div>
+                        </div>
+                        <div class="nav-right">
+                           <ul class="list d-flex">
+                              <li class="list-item"><a href="#">Login</a></li>
+                              <li class="list-item ml-5"><a href="#">Singup</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <div class="banner">
+            <div class="container">
+               <div class="banner-content">
+                  <h1 class="text-center">Smart Watch App <br>
+                     Landing Page</h1>
+                  <div class="img-wrapper text-center">
+                     <img src="./images/Smartwatch-small.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 350">
+            <path fill="#fff" fill-opacity="1" stroke="#fff" stroke-width="5px"
+               d="M0,0 C670,375 695,375 870,295 L1440,0 L1440,350 L0,350Z">
+            </path>
+         </svg>
+
+         <!-- Sidebar Start -->
+         <div class="sidebar-overlay">
+            <div class="sidebar">
+               <ul class="sidebar-btns d-flex justify-content-center">
+                  <li class="btn"><a href="#">Login</a></li>
+                  <li class="btn ml-5"><a href="#">Singup</a></li>
+               </ul>
+               <ul class="sidebar-links">
+                  <li class="sidebar-link text-center">
+                     <a href="#" class="list-link">
+                        How it works
+                     </a>
+                  </li>
+                  <li class="sidebar-link text-center">
+                     <a href="#" class="list-link">
+                        FAQ
+                     </a>
+                  </li>
+                  <li class="sidebar-link text-center">
+                     <a href="#" class="list-link">
+                        Princing
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- Sidebar End -->
+      </section>
+      <!-- Home Section End -->
+
+      <!-- usage-steps section Start -->
+      <section class="usage-stees py-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-10 mx-auto">
+                  <div class="step">
+                     <div class="step-content">
+                        <div class="number-layer">
+                           <span>1</span>
+                        </div>
+                        <div class="step-icon">
+                           <i class="fas fa-download"></i>
+                        </div>
+                        <h3 class="step-title">
+                           <span>download</span> our app
+                        </h3>
+                        <p class="step-desc">
+                           Help in theory, our a the and fixed housed commas, having of a the that deceleration they or
+                           have of there
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-10 mx-auto">
+                  <div class="step">
+                     <div class="step-content">
+                        <div class="number-layer">
+                           <span>2</span>
+                        </div>
+                        <div class="step-icon">
+                           <i class="fas fa-cog"></i>
+                        </div>
+                        <h3 class="step-title">
+                           <span>Install</span> Our App
+                        </h3>
+                        <p class="step-desc">
+                           As coast concise publication such my big from writing right attend; On the possible mail the
+                           fresh as herself
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-10 mx-auto">
+                  <div class="step">
+                     <div class="step-content">
+                        <div class="number-layer">
+                           <span>3</span>
+                        </div>
+                        <div class="step-icon">
+                           <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="step-title">
+                           <span>Start</span> Creating
+                        </h3>
+                        <p class="step-desc">
+                           Need emerged. Train her software their phase. Horn that nor frequency starting the of to
+                           belly, five narrow
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- usage-steps section End -->
+
+      <!-- How-to-use Section Start -->
+      <section class="how-to-use section-pd">
+         <div class="section-title text-center">
+            <h2 class="mb-3">How it <span>works</span></h2>
+            <p class="mb-4">
+               Its every cities the began influenced doing supported seemed installer. Leave there his <br> name desk
+               or truth, to presence his characters alphabet early or deep help necessary and
+            </p>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-10 mx-auto">
+                  <img src="./images/video.png" class="img-fluid" alt="">
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <!-- How-to-use Section End -->
+
+      <!-- Testemonials Section Start -->
+      <section class="testemonials section-pd" id="testemonials">
+         <div class="container">
+            <div class="section-title text-center">
+               <h2 class="mb-3"> Why people <span>loves us</span></h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-5 col-10 mx-auto mb-4 text-center">
+                  <img src="./images/Person.png" alt="" class="img-fluid">
+               </div>
+               <div class="col-lg-7 col-10 mx-auto align-self-center mb-4">
+                  <div class=" testemoinals-items">
+                     <div class="testemonial-item active">
+                        <div class="icon">
+                           <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="desc">
+                           Needless to say we are extremely satisfied with the results. Man, this thing is getting
+                           better and better as I learn more about it. AppNep has really helped our business. I am
+                           really satisfied with AppNep.
+                        </p>
+                        <h4 class="person-name">Mike Smith</h4>
+                        <h6 class="person-title">
+                           Chief Executive Officer
+                        </h6>
+                     </div>
+                     <div class="testemonial-item">
+                        <div class="icon">
+                           <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="desc">
+                           Needless to say we are extremely satisfied with the results. Man, this thing is getting
+                           better and better as I learn more about it. AppNep has really helped our business. I am
+                           really satisfied with AppNep.
+                        </p>
+                        <h4 class="person-name">Owen Adams</h4>
+                        <h6 class="person-title">
+                           Head Office Manager
+                        </h6>
+                     </div>
+                     <div class="testemonial-item">
+                        <div class="icon">
+                           <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="desc">
+                           Needless to say we are extremely satisfied with the results. Man, this thing is getting
+                           better and better as I learn more about it. AppNep has really helped our business. I am
+                           really satisfied with AppNep.
+                        </p>
+                        <h4 class="person-name">Michel Roger</h4>
+                        <h6 class="person-title">
+                           CEO
+                        </h6>
+                     </div>
+                  </div>
+                  <!-- controls -->
+                  <div class="slider-btns">
+                     <button class="left-btn" disabled>
+                        <i class="fas fa-arrow-left"></i>
+                     </button>
+                     <button class="right-btn active-btn">
+                        <i class="fas fa-arrow-right"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+      </section>
+      <!-- Testemonials Section End -->
+
+      <!-- App-look Section Start -->
+      <section class="app-look section-pd">
+         <div class="container">
+            <div class="section-title text-center">
+               <h2 class="mb-3">How it <span>looks</span></h2>
+            </div>
+            <div class="row">
+               <!-- Slider main container -->
+               <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide">
+                        <img src="./images/gallery-1.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="./images/gallery-2.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="./images/gallery-3.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="./images/gallery-4.png" alt="">
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="./images/gallery-5.png" alt="">
+                     </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- App-look Section End -->
+
+      <!-- FAQ Section Start -->
+      <section class="FAQ section-pd">
+         <div class="container">
+            <div class="section-title text-center">
+               <h2 class="mb-3">Frequently <span>asked questions</span></h2>
+            </div>
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-10 col-12 mx-auto">
+                  <div class="questions">
+                     <div class="question-wrapper">
+                        <div class="question">
+                           <p class="question-text">Is this app available for smartwatch?</p>
+                           <div class="icon">
+                              <i class="fas fa-chevron-right"></i>
+                           </div>
+                        </div>
+                        <div class="answer-wrapper">
+                           <p class="answer">
+                              Magicians by her my distribution the room. First absolutely the doing to can important.
+                              Attempt, about been a farther than travelling very rung. Be good in and, which class, was
+                              I have I that. Is o'clock study to how to cache treat. To caching
+                           </p>
+                        </div>
+                     </div>
+                     <div class="question-wrapper">
+                        <div class="question">
+                           <p class="question-text">How can I download the app?</p>
+                           <div class="icon">
+                              <i class="fas fa-chevron-right"></i>
+                           </div>
+                        </div>
+                        <div class="answer-wrapper">
+                           <p class="answer">
+                              Magicians by her my distribution the room. First absolutely the doing to can important.
+                              Attempt, about been a farther than travelling very rung. Be good in and, which class, was
+                              I have I that. Is o'clock study to how to cache treat. To caching
+                           </p>
+                        </div>
+                     </div>
+                     <div class="question-wrapper">
+                        <div class="question">
+                           <p class="question-text">Can i use it for my personal use?</p>
+                           <div class="icon">
+                              <i class="fas fa-chevron-right"></i>
+                           </div>
+                        </div>
+                        <div class="answer-wrapper">
+                           <p class="answer">
+                              Magicians by her my distribution the room. First absolutely the doing to can important.
+                              Attempt, about been a farther than travelling very rung. Be good in and, which class, was
+                              I have I that. Is o'clock study to how to cache treat. To caching
+                           </p>
+                        </div>
+                     </div>
+                     <div class="question-wrapper">
+                        <div class="question">
+                           <p class="question-text">Can i use it for my personal use?</p>
+                           <div class="icon">
+                              <i class="fas fa-chevron-right"></i>
+                           </div>
+                        </div>
+                        <div class="answer-wrapper">
+                           <p class="answer">
+                              Magicians by her my distribution the room. First absolutely the doing to can important.
+                              Attempt, about been a farther than travelling very rung. Be good in and, which class, was
+                              I have I that. Is o'clock study to how to cache treat. To caching
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-10 col-12 mx-auto text-center">
+                  <img style="width:260px" src="./images/Smartwatch-small.png" alt="" class="img-fluid">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FAQ Section End -->
+
+      <!-- Newsletter Section Start -->
+      <section class="newsletter py-5">
+         <div class="newsletter-content">
+            <h3 class="newsletter-heading">Download the future</h3>
+            <p class="newsletter-desc">
+               Rolled effectiveness coffee letters, that deeply from background business would <br> play. Queen country.
+               To
+               in what much seemed as before scarfs, little many it much
+            </p>
+            <div class="input-control">
+               <div class="input-icon">
+                  <i class="fas fa-paper-plane"></i>
+               </div>
+               <input type="text" class="newsletter-input" placeholder="Email">
+               <input class="subscribe" type="submit" value="Subscribe"></input>
+            </div>
+            <ul class="systems-icons d-flex justify-content-center">
+               <li>
+                  <i class="fab fa-apple"></i>
+               </li>
+               <li>
+                  <i class="fab fa-android"></i>
+               </li>
+               <li>
+                  <i class="fab fa-windows"></i>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- Newsletter Section End -->
+
+      <!-- Plans Section Start -->
+      <section class="plans section-pd" id="plans">
+         <div class="section-title text-center">
+            <h2 class="mb-3">Pricing <span>Plans</span></h2>
+            <p class="mb-5">
+               Select the plan that best fits your business <br>
+               and reach your ultimate goal
+            </p>
+         </div>
+
+         <div class="container">
+            <div class="row">
+               <div class="col-10 mx-auto">
+                  <div class="row">
+                     <div class="col-lg-4 col-md-8 col-10 mx-auto mb-3">
+                        <div class="plan text-center">
+                           <span class="plan-name">
+                              STARTER
+                           </span>
+                           <div class="plan-price my-4">
+                              <h2>$10</h2>
+                              <p>Per user / monthly</p>
+                           </div>
+                           <p class="plan-desc">
+                              Of broader of were can concise where concise your they and those various abundantly in
+                              have men, tag
+                           </p>
+                           <span class="line d-block my-4"></span>
+                           <div class="plan-details mb-4">
+                              <p><span>20,000</span> Notifications</p>
+                              <p><span>1,000</span> App updates</p>
+                              <p><span>Limited</span> Bandwidth</p>
+                              <p><span>5M</span> Users</p>
+                           </div>
+                           <button class="sign-up">sign up</button>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-8 col-10 mx-auto mb-3">
+                        <div class="plan text-center">
+                           <span class="plan-name">
+                              PROFESSIONAL
+                           </span>
+                           <div class="plan-price my-4">
+                              <h2>$20</h2>
+                              <p>Per user / monthly</p>
+                           </div>
+                           <p class="plan-desc">
+                              On spends the position. Of in on networks. Distinct canvassing one of here, there being
+                              deeply, the
+                           </p>
+                           <span class="line d-block my-4"></span>
+                           <div class="plan-details mb-4">
+                              <p><span>30,000</span> Notifications</p>
+                              <p><span>3,000</span> App updates</p>
+                              <p><span>Unlimited</span> Bandwidth</p>
+                              <p><span>10M</span> Users</p>
+                           </div>
+                           <button class="sign-up">sign up</button>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-8 col-10 mx-auto mb-3">
+                        <div class="plan text-center">
+                           <span class="plan-name">
+                              ADVANCED
+                           </span>
+                           <div class="plan-price my-4">
+                              <h2>$30</h2>
+                              <p class="user">Per user / monthly</p>
+                           </div>
+                           <p class="plan-desc">
+                              The up poets, been titled area to that food, the to material. But emerged. Company, a in
+                              that
+                           </p>
+                           <span class="line d-block my-4"></span>
+                           <div class="plan-details mb-4">
+                              <p><span>50,000</span> Notifications</p>
+                              <p><span>5,000</span> App updates</p>
+                              <p><span>Unlimited</span> Bandwidth</p>
+                              <p><span>20M</span> Users</p>
+                           </div>
+                           <button class="sign-up">sign up</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Plans Section End -->
+
+      <!-- Posts Section Start -->
+      <section class="posts section-pd">
+         <div class="section-title text-center mb-5">
+            <h2 class="mb-5">Latest <span>posts</span></h2>
+         </div>
+         <div class="container">
+            <div class="row" id="posts">
+               <!-- <div class="col-lg-4 col-md-10 col-12 mb-3 mx-auto">
+                  <div class="post">
+                     <div class="post-top">
+                        <p class="date">On Dec 16,2022 by <span class="post-author">
+                              Admin
+                           </span>
+                        </p>
+                     </div>
+                     <p class="post-title">
+                        Physics took past experiments on evaluate now, sort hand, attained
+                     </p>
+                     <p class="post-body">
+                        Out perceive have tone a on a quitting their spineless, focus leave stupid. Skyline cache
+                        effectiveness country, maintain around presence right, a is themselves
+                     </p>
+                  </div>
+               </div> -->
+            </div>
+            <button class="posts-btn" id="viewBtn">view all</button>
+         </div>
+      </section>
+      <!-- Posts Section End -->
+
+      <!-- Contact us Section Start -->
+      <section class="contact-us section-pd">
+         <div class="section-title text-center mb-5">
+            <h2 class="mb-1">Contact <span>us</span></h2>
+            <p>We'd love to hear from you</p>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-10 mx-auto">
+                  <form class="contact-us-from">
+                     <div class="input-control">
+                        <div class="input-icon">
+                           <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <input type="text" class="newsletter-input" placeholder="Email">
+                     </div>
+                     <div class="input-control">
+                        <div class="select-icon">
+                           <i class="fas fa-caret-down"></i>
+                        </div>
+                        <select name="" id="">
+                           <option class="selected" selected value="select issue">select issue</option>
+                           <option value="issue 1">issue 1</option>
+                           <option value="issue 2">issue 2</option>
+                           <option value="issue 3">issue 3</option>
+                        </select>
+                     </div>
+                     <div class="input-control">
+                        <input type="submit" value="submit">
+                     </div>
+                  </form>
+                  <ul class="contact-details">
+                     <li class="contact-item">
+                        <span class="icon">
+                           <i class="fas fa-at"></i>
+                        </span>
+                        <a href="#">
+                           info@email.com
+                        </a>
+                     </li>
+                     <li class="contact-item">
+                        <span class="icon">
+                           <i class="fas fa-phone-volume"></i>
+                        </span>
+                        <a href="#">
+                           123-456-7890
+                        </a>
+                     </li>
+                     <li class="contact-item">
+                        <span class="icon">
+                           <i class="far fa-compass"></i>
+                        </span>
+                        <a href="#">
+                           123 New York,USA
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="map">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99854.35007566174!2d-121.50420653064933!3d38.54648066263821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1616165600364!5m2!1sen!2seg"
+               width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+      </section>
+      <!-- Contact us Section End -->
+
+      <!-- Footer Start -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="footer-top">
+                  <ul class="downloud">
+                     <li class="downloud-item">
+                        <a href="#">
+                           <img src="./images/AppStore Button.png" alt="" class="img-fluid">
+                        </a>
+                     </li>
+                     <li class="downloud-item">
+                        <a href="#">
+                           <img src="./images/PlayStore Button.png" alt="" class="img-fluid">
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="useful-links">
+                     <li class="link">
+                        <a href="#home">home</a>
+                     </li>
+                     <li class="link">
+                        <a href="#testemonials">testimonials</a>
+                     </li>
+                     <li class="link">
+                        <a href="#plans">plans</a>
+                     </li>
+                     <li class="link">
+                        <a href="#">blog</a>
+                     </li>
+                     <li class="link">
+                        <a href="#about">about</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="line"></div>
+         <div class="container">
+            <div class="row">
+               <div class="footer-bottom">
+                  <p class="rights">
+                     ©2020 - Nasir Uddin | All right reserved
+                  </p>
+                  <ul class="social-media-icons">
+                     <li class="social-media-item">
+                        <a href="#">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </li>
+                     <li class="social-media-item">
+                        <a href="#">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                     </li>
+                     <li class="social-media-item">
+                        <a href="#">
+                           <i class="fab fa-instagram"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer End -->
+
+      <script src="./vendors/jquery/jquery.min.js"></script>
+      <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script type="module" src="./js/main.js"></script>
+   </body>
+
+</html>

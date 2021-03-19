@@ -1,0 +1,58 @@
+.FAQ {
+ background: url("../images/Wave.png");
+ background-position: right bottom;
+ background-repeat: no-repeat;
+}
+
+.questions {
+ background-color: $lightColor;
+
+ .question-wrapper {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px $boxShadowColor;
+
+  p {
+   font-size: 1rem;
+   margin: 0;
+   transition: $transition;
+  }
+
+  .question {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.25rem 0;
+   cursor: pointer;
+
+   .question-text {
+    font-weight: bold;
+
+    &.active {
+     color: $mainColor;
+    }
+   }
+
+   .icon {
+    color: $textColor;
+    transition: $transition;
+
+    &.active {
+     transform: rotate(90deg);
+     color: $mainColor;
+    }
+   }
+  }
+
+  .answer-wrapper {
+   padding-right: 4rem;
+   transition: $transition;
+   height: 0;
+   overflow: hidden;
+   .answer {
+    font-size: 0.75rem;
+   }
+  }
+ }
+}

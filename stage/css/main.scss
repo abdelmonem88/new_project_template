@@ -1,5 +1,13 @@
-.parent {
-color: red;
-font-size: 44px;
-background-color: darkcyan;
-}
+@import "./sass/variables/vars";
+@import "./sass/helpers/mixins";
+@import "./sass/layout/general-styles";
+@import "./sass/layout/home";
+@import "./sass/layout/usage-steps";
+@import "./sass/layout/testemonials";
+@import "./sass/layout/app-look";
+@import "./sass/layout/FAQ";
+@import "./sass/layout/newsletter";
+@import "./sass/layout/plans";
+@import "./sass/layout/posts";
+@import "./sass/layout/contact-us";
+@import "./sass/layout/footer";

@@ -1,0 +1,84 @@
+.plans {
+ background: url("../images/Wave Shape.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ .plan {
+  background-color: $lightColor;
+  padding: 2.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px $boxShadowColor;
+  transition: $transition;
+
+  .plan-name {
+   background-color: #e6f6ff;
+   color: $mainColor;
+   font-size: 12px;
+   padding: 0.25rem 1rem;
+   border-radius: 20px;
+  }
+
+  .plan-price {
+   h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+   }
+
+   p {
+    font-size: 13px;
+   }
+  }
+
+  .line {
+   display: block;
+   margin: 0 auto;
+   height: 1px;
+   width: 80%;
+   background-color: #e6efff;
+  }
+
+  .plan-details {
+   p {
+    span {
+     font-weight: 700;
+    }
+   }
+  }
+
+  .sign-up {
+   width: 80%;
+   padding: 0.5rem 0;
+   background-color: transparent;
+   color: $mainColor;
+   border: 2px solid $mainColor;
+   border-radius: 20px;
+   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 600;
+  }
+ }
+}
+
+.plan:hover {
+ background-color: $mainColor;
+ box-shadow: 0px 0px 25px 5px #8cc0f5;
+
+ .plan-name {
+  background-color: $lightColor;
+ }
+
+ .plan-price,
+ p {
+  color: $lightColor !important;
+ }
+
+ .line {
+  background-color: #0967d2;
+ }
+
+ .sign-up {
+  background-color: $lightColor;
+ }
+}

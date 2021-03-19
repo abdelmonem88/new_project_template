@@ -1,0 +1,49 @@
+.usage-stees {
+ .step {
+  position: relative;
+  padding: 5rem 1.7rem 1rem;
+  transition: $transition;
+  border-radius: 5px;
+
+  &:hover {
+   box-shadow: $boxShadow;
+  }
+
+  .number-layer {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 50px;
+   top: -30px;
+   color: #f4f6f9;
+   font-size: 11rem;
+   z-index: -1;
+  }
+
+  .step-content {
+   .step-icon {
+    i {
+     font-size: 2.5rem;
+     color: $mainColor;
+    }
+
+    margin-bottom: 0.75rem;
+   }
+
+   .step-title {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+
+    span {
+     color: $mainColor;
+    }
+   }
+
+   .step-desc {
+    color: $textColor;
+   }
+  }
+ }
+}

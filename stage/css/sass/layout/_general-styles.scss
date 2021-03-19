@@ -1,0 +1,63 @@
+// *,
+// ::after,
+// ::before {
+//  margin: 0 auto;
+//  padding: 0;
+//  box-sizing: border-box;
+// }
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+ color: $darkColor;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+a {
+ color: $mainColor;
+ transition: $transition;
+}
+
+a,
+a:hover {
+ text-decoration: none;
+}
+
+button {
+ border: none;
+ outline: none;
+}
+
+p {
+ font-size: 14px;
+ color: $textColor;
+ margin: 0;
+}
+
+.nav-logo a {
+ font-size: 30px;
+}
+
+.section-pd {
+ padding: 4rem 0;
+}
+
+.section-title {
+ margin-bottom: 2.5rem;
+
+ h2 {
+  font-weight: 600;
+ }
+
+ span {
+  color: $mainColor;
+ }
+}

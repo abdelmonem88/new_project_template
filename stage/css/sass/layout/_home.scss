@@ -1,0 +1,193 @@
+//
+.home {
+ height: 100vh;
+ background-image: linear-gradient(to right bottom, #238fea, #32c6e4);
+ //  clip-path: polygon(0% 0%, 0% 60%, 50% 100%, 100% 60%, 100% 0%);
+ position: relative;
+
+ svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+ }
+}
+
+.nav-wrapper {
+ .nav-left,
+ .nav-right {
+  flex: 0 0 45%;
+
+  .list {
+   align-items: center;
+  }
+ }
+
+ .nav-right .list {
+  justify-content: flex-end;
+ }
+
+ .nav-left a,
+ .nav-right a {
+  color: $lightColor;
+  font-size: 15px;
+ }
+
+ .nav-logo {
+  background-color: $lightColor;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+
+  a {
+   color: $mainColor;
+  }
+ }
+
+ .nav-right {
+  .list {
+   :nth-child(2) {
+    @include btn($lightColor);
+    cursor: pointer;
+
+    &:hover {
+     background-color: $lightColor;
+
+     a {
+      color: $mainColor;
+     }
+    }
+   }
+  }
+ }
+}
+
+.banner {
+ .banner-content {
+  h1 {
+   color: $lightColor;
+   margin: 2.5rem 0;
+   font-weight: 600;
+  }
+
+  img {
+   width: 260px;
+  }
+ }
+}
+
+// Sidebar styles
+.sidebar-overlay {
+ position: fixed;
+ height: 100vh;
+ width: 50%;
+ top: 0;
+ left: 0;
+ z-index: 9999;
+ opacity: 0;
+ visibility: hidden;
+ transition: $transition;
+
+ .sidebar {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: inherit;
+  background-color: $lightColor;
+  transition: $transition;
+
+  .sidebar-btns {
+   padding: 2rem 0;
+
+   a {
+    color: $mainColor;
+   }
+
+   :nth-child(2) {
+    @include btn($mainColor);
+
+    &:hover {
+     background-color: $mainColor;
+
+     a {
+      color: #fff;
+     }
+    }
+   }
+  }
+
+  .sidebar-links {
+   padding: 0;
+
+   .sidebar-link {
+    margin-bottom: 1rem;
+
+    a {
+     color: $mainColor;
+    }
+   }
+  }
+ }
+}
+
+.sidebar-overlay.show {
+ opacity: 1;
+ visibility: visible;
+ transition: $transition;
+
+ .sidebar {
+  left: 0;
+  transition: $transition;
+ }
+}
+
+//Home media query
+@media (max-width: 991px) {
+ .nav-wrapper {
+  .nav-left,
+  .nav-right {
+   display: none;
+  }
+
+  .nav-center {
+   flex: 0 0 100%;
+
+   .toggle-icon {
+    background-color: $lightColor;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+
+    span {
+     display: block;
+     height: 3px;
+     background-color: $mainColor;
+     transition: $transition;
+    }
+
+    span:first-child {
+     width: 50%;
+     align-self: flex-end;
+    }
+
+    span:nth-child(2) {
+     width: 75%;
+     align-self: flex-end;
+    }
+
+    &:hover span {
+     width: 100%;
+    }
+   }
+  }
+ }
+}
